@@ -1,61 +1,65 @@
-css
-Run
-Copy code
+/* Reset default margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: white;
-    color: black;
+    font-family: 'Open Sans', sans-serif; /* Font family */
+    background-color: white; /* Background color */
+    color: black; /* Text color */
 }
 
+/* Header styles */
 header {
-    background-color: red;
-    padding: 20px;
-    text-align: center;
+    background-color: red; /* Header background color */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Center text */
 }
 
+/* Navigation styles */
 nav {
-    margin: 20px 0;
+    margin: 20px 0; /* Margin above and below the nav */
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s;
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Margin between links */
+    transition: color 0.3s; /* Transition effect for color change */
 }
 
 nav a:hover {
-    color: yellow;
+    color: yellow; /* Change link color on hover */
 }
 
+/* Heading styles with animation */
 h1, h2 {
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
 }
 
+/* Button styles */
 button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    background-color: red; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Transition effect for background color */
 }
 
 button:hover {
-    background-color: darkred;
+    background-color: darkred; /* Change button color on hover */
 }
 
+/* Fade-in animation keyframes */
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0; /* Start fully transparent */
     }
     to {
-        opacity: 1;
+        opacity: 1; /* End fully opaque */
     }
 }
